@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <h1 id="heading">Expense Tracker</h1>
+    </div>
+    <div class="row">
+        <form onsubmit="storeInLocal(event)" id="expenseForm">
+            <label for="amount">Expense amount</label>
+            <input type="text" id="amount" name="amount"><br>
+            <label for="description">Description</label>
+            <input type="text" id="description"><br>
+            <label for="category">Choose category</label>
+            <select name="category" id="category">
+                <option value="Food" id="option1">Food</option>
+                <option value="Education" id="option2">Education</option>
+                <option value="Entertainment" id="option3">Entertainment</option>
+                <option value="Shopping" id="option4">Shopping</option>
+            </select><br>
+            <input type="submit" name="submit" id="submit" value="Add Expense">
+            <ul id="listofitems"></ul>
+        </form>
+    </div>
+</div>
+<script src="expensetrackerapp.js"></script>
+</body>
+</html>
